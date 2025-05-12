@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <img class="heart" src="img/img1.jpeg" alt="Imagem em forma de coração">
+        <p class="texto" style="max-width: 600px;">
+            Do fundo do meu coração eu amei todos esses 10 meses
+            que estive ao sreu lado, sejam eles momentos bons ou
+            ruins, não importa eu amei cada segundo. Amo estar com você,
+            meus dias e noites se tornaram m ais felizes desde
+            que te conheci, eu passaria noites em claro só pra ter
+            a certeza de que veria novamente.
+        </p>
+    </div>
+    <br>
+    <div class="container">
+
+        <p class="texto" style="max-width: 600px;">
+            Meu amor,
+
+            Desde o instante em que você entrou na minha vida, tudo ganhou mais cor, mais sentido, mais luz. Você é
+            minha princesinha, o tesouro mais precioso que o destino colocou no meu caminho. Não há um só dia em que eu
+            não agradeça por ter o privilégio de te chamar de meu neném, de te cuidar, de te amar com todo o meu
+            coração.
+
+            Cada sorriso seu é como um raio de sol iluminando minha alma, e cada gesto seu me mostra que o amor
+            verdadeiro existe, e está nos seus olhos, no seu jeitinho doce, na sua presença que me acalma e me faz
+            querer ser uma pessoa melhor a cada dia.
+
+            Você é tudo que eu sempre sonhei, tudo que eu nem sabia que precisava, mas que hoje é essencial pra minha
+            felicidade. Meu amor, eu te prometo carinho, respeito, cumplicidade e um amor que só cresce com o tempo.
+            Você é meu mundo, meu lar, meu tudo.
+
+            Com todo o amor que existe em mim,
+            Te amo, minha princesinha!
+        </p>
+        <img class="heart2" src="img/img2.jpeg" alt="Imagem em forma de coração">
+
+    </div>
+    <br>
+    <h1 style="text-align: center; color: #000000;">algumas fotos da mulher mais incrivel e linda desse mundo</h1>
+    <div class="carousel">
+        <img src="img/img3.jpeg" class="active" alt="Imagem 1">
+        <img src="img/img4.jpeg" alt="Imagem 2">
+        <img src="img/img5.jpeg" alt="Imagem 3">
+        <img src="img/img6.jpeg" alt="Imagem 2">
+        <img src="img/img7.jpeg" alt="Imagem 3">
+        <img src="img/img8.jpeg" alt="Imagem 3">
+        <img src="img/img9.jpeg" alt="Imagem 3">
+
+        <div class="buttons">
+            <button onclick="prevImage()">⟨</button>
+            <button onclick="nextImage()">⟩</button>
+        </div>
+    </div>
+    <br>
+    <div class="container2" style="text-align: center; ">
+        <h2>Catharine, Amor da Minha Vida</h2><br>
+        <p style="font-size: 18px; margin-left: 300px; margin-right: 300px; text-align: justify;">Catharine, nome doce
+            como a brisa,
+            És a calma que meu coração precisa.
+            Tua voz é melodia que embala meus dias,
+            Teu sorriso, luz que desfaz minhas agonias.</p><br>
+
+        <p style="font-size: 18px; margin-left: 300px; margin-right: 300px; text-align: justify;">Nos teus olhos
+            encontro abrigo e paz,
+            Um porto seguro onde tudo se refaz.
+            Teu jeito, teu toque, tua alma tão bela,
+            Transforma o comum em uma aquarela.</p><br>
+
+        <p style="font-size: 18px; margin-left: 300px; margin-right: 300px; text-align: justify;">És minha princesinha,
+            meu neném encantado,
+            Meu amor maior, por Deus abençoado.
+            Tua presença é flor que nunca murcha,
+            É poema vivo que minha alma escuta.</p><br>
+
+        <p style="font-size: 18px; margin-left: 300px; margin-right: 300px; text-align: justify;">Amar você é bênção, é
+            sorte, é destino,
+            É caminhar contigo por todo o caminho.
+            E se o mundo acabar num instante qualquer,
+            Serei feliz só por ter te conhecido, mulher.</p>
+    </div>
+
+
+    <div class="container3" style="text-align: center; margin-top: 120px;">
+        <h2>DESCULPA!!!</h2>
+        <p style="font-size: 18px;">Desculpa por tudo que eu fiz nos ultimos dias, inclusive no nosso dia, eu to
+            passando por um momento dificil e você sabe, mas isso não é motivo, eu erro muito com você eu sei disso, peço
+            que me perdoe, eu amo você, eu realmente to tentando mudar e eu quero te mostrar isso, comçando por esse
+            pequeno presnte elaborado especialmente pra você! Espro que algum dia me desculpe por tudo, eu amo você
+            minha princesinha, Feliz 10 meses!!! Eu te amo!</p>
+    </div>
+
+    <script>
+        const images = document.querySelectorAll(".carousel img");
+        let current = 0;
+
+        function showImage(index) {
+            images.forEach(img => img.classList.remove("active"));
+            images[index].classList.add("active");
+        }
+
+        function prevImage() {
+            current = (current - 1 + images.length) % images.length;
+            showImage(current);
+        }
+
+        function nextImage() {
+            current = (current + 1) % images.length;
+            showImage(current);
+        }
+    </script>
+
+    <script>
+        const resposta = prompt("Quem é a pessoa que você mais ama nesse mundo?");
+
+        if (resposta === "Gabriel") {
+            alert("Acesso permitido! 💘");
+        } else {
+            alert("Acesso negado! Você esqueceu de quem é o seu neném 😢");
+        }
+    </script>
+
+</body>
+
+</html>
